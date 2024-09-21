@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTMX Example</title>
+    <script src="htmx/htmx_min.js"></script>
+  </head>
+  <body>
+    <h1>HTMX Example</h1>
+    <div hx-get="./htmx/example" hx-trigger="click" hx-target="#result">
+      Click me to load content
+    </div>
+    <div id="result"></div>
+  </body>
+</html>
