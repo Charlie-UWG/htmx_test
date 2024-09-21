@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDNからhtmx.min.jsを読み込む -->
+    <script src="https://unpkg.com/htmx.org@2.0.2"></script>
+    <title>HTMX Example</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header
+      id="header"
+      hx-get="./layouts/header.html"
+      hx-target="#header"
+      hx-trigger="load"
+      hx-swap="outsideHTML"
+    ></header>
+    <main>
+      <div class="selectPage">
+        <h2>新規申し込み</h2>
+        <section class="section">
+          <h3>コースの選択</h3>
+          <label class="radioLabel" for="type1">
+            <input id="type1" type="radio" name="type" value="Type-A-" />A
+          </label>
+          <label class="radioLabel" for="type2">
+            <input id="type2" type="radio" name="type" value="Type-B-" />B
+          </label>
+          <label class="radioLabel" for="type3">
+            <input id="type3" type="radio" name="type" value="Type-C-" />C
+          </label>
+        </section>
+        <section id="productTypeA">
+          <h3>製品選択</h3>
+          <ul>
+            <li>
+              <label class="radioLabel" for="productA-1">
+                <input
+                  id="productA-1"
+                  type="radio"
+                  name="productA"
+                  value="PRODUCT1"
+                />Product-1
+              </label>
+            </li>
+            <li>
+              <label class="radioLabel" for="productA-2">
+                <input
+                  id="productA-2"
+                  type="radio"
+                  name="productA"
+                  value="PRODUCT2"
+                />Product-2
+              </label>
+            </li>
+            <li>
+              <label class="radioLabel" for="productA-3">
+                <input
+                  id="productA-3"
+                  type="radio"
+                  name="productA"
+                  value="PRODUCT3"
+                />Product-3
+              </label>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+    <footer
+      id="footer"
+      hx-get="./layouts/footer.html"
+      hx-trigger="revealed"
+      hx-target="#footer"
+      hx-swap="outsideHTML"
+    ></footer>
+  </body>
+</html>
