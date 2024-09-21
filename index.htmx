@@ -13,9 +13,9 @@
   </head>
   <body>
     <h1>HTMX Example</h1>
-    <div hx-get="./example" hx-trigger="click" hx-target="#result">
+    <div hx-get="./example.html" hx-trigger="click" hx-target="#result">
       Click me to load content
     </div>
-    <div id="result"></div>
+    <div id="result">この部分が変化します！</div>
   </body>
 </html>
