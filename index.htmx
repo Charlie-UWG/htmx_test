@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTMX Example</title>
-    <!-- CDNからhtmx.min.jsを読み込む -->
-    <script
-      src="https://unpkg.com/htmx.org@2.0.2"
-      integrity="sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <h1>HTMX Example</h1>
@@ -17,5 +11,12 @@
       Click me to load content
     </div>
     <div id="result">この部分が変化します！</div>
+
+    <!-- CDNからhtmx.min.jsを読み込む -->
+    <script
+      src="https://unpkg.com/htmx.org@2.0.2"
+      integrity="sha384-Y7hw+L/jvKeWIRRkqWYfPcvVxHzVzn5REgzbawhxAuQGwX1XWe70vji+VSeHOThJ"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
