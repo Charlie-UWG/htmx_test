@@ -1,0 +1,75 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body ul {
+  list-style-type: none;
+  padding: 0;
+}
+body header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+body header h1 {
+  margin: 0;
+}
+body header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+body header nav ul li {
+  display: inline;
+}
+body header nav ul li a {
+  color: #fff;
+  margin: 0 8px;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  text-decoration: underline;
+}
+body main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+body main .selectPage {
+  margin-inline: 16px;
+}
+body main .selectPage section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+body main .selectPage section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+body main .selectPage section label.radioLabel {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  background-color: #fff;
+  border: 1px solid aquamarine;
+  border-radius: 4px;
+}
+body main .selectPage section label.radioLabel:hover {
+  background-color: aquamarine;
+  cursor: pointer;
+}
+body main .selectPage section label.radioLabel input[type=radio] {
+  margin-right: 8px;
+}/*# sourceMappingURL=style.css.map */
