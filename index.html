@@ -23,15 +23,23 @@
           <div class="selectInner">
             <section class="section">
               <h3>コースの選択</h3>
-              <label class="radioLabel" for="type1">
-                <input id="type1" type="radio" name="type" value="Type-A-" />A
-              </label>
-              <label class="radioLabel" for="type2">
-                <input id="type2" type="radio" name="type" value="Type-B-" />B
-              </label>
-              <label class="radioLabel" for="type3">
-                <input id="type3" type="radio" name="type" value="Type-C-" />C
-              </label>
+              <ul>
+                <li>
+                  <label class="radioLabel" for="type1">
+                    <input id="type1" type="radio" name="type" value="Type-A-" />A
+                  </label>
+                </li>
+                <li>
+                  <label class="radioLabel" for="type2">
+                    <input id="type2" type="radio" name="type" value="Type-B-" />B
+                  </label>
+                </li>
+                <li>
+                  <label class="radioLabel" for="type3">
+                    <input id="type3" type="radio" name="type" value="Type-C-" />C
+                  </label>
+                </li>
+              </ul>
             </section>
             <section id="productTypeA">
               <h3>製品選択</h3>
@@ -66,11 +74,65 @@
                     />Product-3
                   </label>
                 </li>
+                <li>
+                  <label class="radioLabel" for="productA-4">
+                    <input
+                      id="productA-4"
+                      type="radio"
+                      name="productA"
+                      value="PRODUCT4"
+                    />Product-4
+                  </label>
+                </li>
+              </ul>
+            </section>
+            <section>
+              <h3>付属品</h3>
+              <ul>
+                <li>
+                  <label class="radioLabel" for="accessory1">
+                    <input
+                      id="accessory1"
+                      type="radio"
+                      name="accessory[]"
+                      value="ACCESSORY1"
+                    />Accessory-1
+                  </label>
+                </li>
+                <li>
+                  <label class="radioLabel" for="accessory2">
+                    <input
+                      id="accessory2"
+                      type="radio"
+                      name="accessory[]"
+                      value="ACCESSORY2"
+                    />Accessory-2
+                  </label>
+                </li>
+            </section>
+            <section>
+              <h3>プラン</h3>
+              <ul>
+                <li>
+                  <label class="radioLabel" for="plan1">
+                    <input id="plan1" type="radio" name="plan" value="PLAN1" />Plan-1
+                  </label>
+                </li>
+                <li>
+                  <label class="radioLabel" for="plan2">
+                    <input id="plan2" type="radio" name="plan" value="PLAN2" />Plan-2
+                  </label>
+                </li>
+                <li>
+                  <label class="radioLabel" for="plan3">
+                    <input id="plan3" type="radio" name="plan" value="PLAN3" />Plan-3
+                  </label>
+                </li>
               </ul>
             </section>
           </div>
 
-          <input class="submitButton" type="submit" valur="次へ"></input>
+          <input class="submitButton" type="submit" value="次へ"></input>
         </form>
       </div>
     </main>
