@@ -39,45 +39,45 @@ body main {
   max-width: 800px;
   padding: 20px;
 }
-body main .selectInner {
+body main .selectPage {
+  margin-inline: 16px;
+}
+body main .selectPage .selectInner {
   display: flex;
   flex-direction: column;
   align-items: start;
   row-gap: 12px;
   margin-bottom: 64px;
 }
-body main .selectPage {
-  margin-inline: 16px;
-}
-body main .selectPage section {
+body main .selectPage .selectInner section {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
-body main .selectPage section ul {
+body main .selectPage .selectInner section ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   -moz-column-gap: 16px;
        column-gap: 16px;
 }
-body main .selectPage section label.radioLabel {
+body main .selectPage .selectInner section label.radioLabel {
   display: flex;
   align-items: center;
   font-size: 1.2em;
   margin-bottom: 8px;
-  padding: 8px 16px;
+  padding: 8px 16px 8px 12px;
   background-color: #fff;
   border: 1px solid aquamarine;
-  border-radius: 4px;
+  border-radius: 8px;
 }
-body main .selectPage section label.radioLabel:hover {
+body main .selectPage .selectInner section label.radioLabel:hover {
   background-color: aquamarine;
   cursor: pointer;
 }
-body main .selectPage section label.radioLabel input[type=radio] {
+body main .selectPage .selectInner section label.radioLabel input[type=radio] {
   margin-right: 8px;
 }
 body main .selectPage input.submitButton {
